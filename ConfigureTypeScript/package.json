@@ -1,0 +1,31 @@
+{
+  "name": "configuretypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:js": "rimraf wwwroot/js",
+    "build:webpack": "npm run clean:js && webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.3.38",
+    "@types/lodash": "^4.14.150",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "-vs-binding": {
+    "BeforeBuild": [
+      "build:webpack"
+    ]
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.15"
+  }
+}

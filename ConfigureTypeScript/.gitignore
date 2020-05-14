@@ -1,0 +1,4 @@
+﻿.vs/
+**/Scripts/**/*.js
+**/Scripts/**/*.map
+**/wwwroot/js
